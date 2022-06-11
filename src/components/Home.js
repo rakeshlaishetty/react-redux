@@ -1,10 +1,11 @@
 import React from "react";
 import '../../src/App.css'
-const Home = () => {
+const Home = (props) => {
+  console.log("props",props)
   return (
     <>
     <div className="add-to-cart">
-        <img src="https://static.vecteezy.com/system/resources/previews/006/635/854/large_2x/add-to-cart-hand-drawn-doodle-shopping-icon-free-vector.jpg"/>
+        <img alt = "hep" src="https://static.vecteezy.com/system/resources/previews/006/635/854/large_2x/add-to-cart-hand-drawn-doodle-shopping-icon-free-vector.jpg"/>
     </div>
       <div className="cart-wrapper">
         <div className="img-wrapper">

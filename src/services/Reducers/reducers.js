@@ -1,18 +1,18 @@
+import { Add_To_Cart } from "../Constants";
 export const InitialState = {
-  cardData: {},
+  cardData: [],
 };
 
-const CardItem = (state = InitialState, action) => {
+export default function CardItem(state = InitialState, action) {
   switch (action.type) {
     case Add_To_Cart:
+      console.log("ADD reducers",action)
       return {
         ...state,
-        cardData: action.data,
+        cardData: action.data
       }
-      break;
       default:
         return state;
   }
 };
 
-export default CardItem;
